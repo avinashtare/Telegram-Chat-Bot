@@ -22,12 +22,19 @@ function handleMessage(messageObj) {
             case "random":
                 return sendMessage(messageObj, Math.random())
 
+            case "time":
+                return sendMessage(messageObj, new Date())
+
+            case "by":
+                return sendMessage(messageObj, "Goood Byyyyy")
+
             default:
                 return sendMessage(messageObj, "Sorry! i don't now what you are going to say!")
         }
 
     }
     else {
+        // all the other messages 
         return sendMessage(messageObj, messageText)
     }
 }

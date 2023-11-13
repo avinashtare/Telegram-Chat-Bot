@@ -1,3 +1,4 @@
+
 # Telegram Chatbot 
 
 A simple Telegram chatbot built with Node.js and the Telegram Bot API 
@@ -72,6 +73,17 @@ https://api.telegram.org/bot<Token>/setWebhook?url=<Ngrok_Url>
    npm start
    ```
 
+
+## Command Reference (Use In Telegram Chat Bot)
+
+| command             |Responses                                                    |
+| ----------------- | ------------------------------------------------------------------ |
+| /Start |  Hey hi! i am you bot! |
+| /random |  Random Value |
+| /time |  Current Time |
+| /by |  Goood Byyyyy |
+
+you can change this in \controller\lib\Telegram.js
 
 ## Telegram Documentation
 
