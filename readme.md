@@ -36,6 +36,9 @@ This Telegram chatbot is designed to [mention the purpose of your chatbot]. It u
    ```bash
    PORT=5012
    Telegram_Bot_Token=<YOUR TOKEN>
+   
+   # Enter your ngrok public serve url <example> replace from you server url
+   NgrokURL = "https://cc62-103-71-16-137.ngrok-free.app/"  
    ```
 
 
@@ -82,6 +85,7 @@ https://api.telegram.org/bot<Token>/setWebhook?url=<Ngrok_Url>
 | /random |  Random Value |
 | /time |  Current Time |
 | /by |  Goood Byyyyy |
+| /uplaod image | return path |
 
 you can change this in \controller\lib\Telegram.js
 

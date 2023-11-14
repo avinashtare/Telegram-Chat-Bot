@@ -35,7 +35,7 @@ function handleMessage(messageObj) {
     }
     else {
         // all the other messages 
-        return sendMessage(messageObj, messageText)
+        return sendMessage(messageObj, messageText);
     }
 }
 

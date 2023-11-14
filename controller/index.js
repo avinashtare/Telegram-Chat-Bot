@@ -5,6 +5,9 @@ async function handler(req, method) {
     if (body) {
         const messageObj = body.message;
         
+        // if messageObj not avaliable return ;
+        if(!messageObj) return;
+
         // handel diffrent formats 
         if (messageObj.text) {
             await handleMessage(messageObj);

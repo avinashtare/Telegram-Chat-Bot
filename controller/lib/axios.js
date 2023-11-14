@@ -2,7 +2,11 @@ const axios = require("axios")
 const path = require("path");
 const fs = require("fs");
 
+// chat bot token 
 const Token = process.env.Telegram_Bot_Token;
+
+// public url of serve 
+const PublicURL = process.env.NgrokURL; 
 
 // this url for send message 
 const BASE_URL = `https://api.telegram.org/bot${Token}`;
@@ -49,7 +53,7 @@ async function handleSaveImage(file_id, fileName, messageObj = {}) {
 
         return getAxiosInstance().get("sendMessage", {
             chat_id: messageObj.chat.id,
-            text: `Your image uplaod at \n /images/${fileName}.jpg`
+            text: `Your image uplaod at \n ${PublicURL}/images/${fileName}.jpg`
         })
     } catch (error) {
         console.error('Error writing file:', error.message);
